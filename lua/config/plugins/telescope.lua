@@ -31,6 +31,8 @@ return {
       end)
 
       require "config.telescope.multigrep".setup()
+      require "config.telescope.bufgrep".setup()
+      require "config.telescope.bufgrep_basic".setup()
     end
   }
 }

@@ -1,0 +1,127 @@
+[2024-12-28 22:44:07] Filename: 
+[2024-12-28 22:44:12] Filename: 
+[2024-12-28 22:47:13] Filename: 
+[2024-12-28 22:47:14] Filename: 
+[2024-12-28 22:47:14] Filename: 
+[2024-12-28 22:47:14] Filename: 
+[2024-12-28 22:47:14] Filename: 
+[2024-12-28 22:47:14] Filename: 
+[2024-12-28 22:49:10] MG /home/dmass/.config/nvim-advent
+[2024-12-28 22:54:52] Filename: 
+[2024-12-28 22:54:52] Filename: 
+[2024-12-28 22:54:52] Filename: 
+[2024-12-28 22:54:52] Filename: 
+[2024-12-28 22:54:53] Filename: 
+[2024-12-28 22:54:53] Filename: 
+[2024-12-28 22:56:07] bufnr : 8
+[2024-12-28 22:56:07] Filename: 
+[2024-12-28 22:56:07] bufnr : 8
+[2024-12-28 22:56:07] Filename: 
+[2024-12-28 22:56:08] bufnr : 8
+[2024-12-28 22:56:08] Filename: 
+[2024-12-29 00:10:18] stdin : print("advent of neovim")
+
+require("config.lazy")
+require("config.options")
+require("config.remaps")
+require("config.autocommands")
+
+require("nvim-treesitter.parsers").get_parser_configs().pico8 = {
+  install_info = {
+    url = "https://github.com/paradoxskin/tree-sitter-pico8.git",
+    files = { "src/parser.c" },
+  },
+  filetype = "pico8"
+}
+
+-- Define the log file path
+local log_file = vim.fn.expand("~/.config/nvim-advent/nvim_log.txt")
+
+-- Function to log messages
+local function log_message(message)
+  local log_msg = string.format("[%s] %s\n", os.date("%Y-%m-%d %H:%M:%S"), message)
+  local f = io.open(log_file, "a")
+  if f then
+    f:write(log_msg)
+    f:close()
+  else
+    print("Failed to open log file: " .. log_file)
+  end
+end
+
+-- Export the log function to be used globally
+_G.log_message = log_message
+[2024-12-29 00:13:56] stdin : print("advent of neovim")
+
+require("config.lazy")
+require("config.options")
+require("config.remaps")
+require("config.autocommands")
+
+require("nvim-treesitter.parsers").get_parser_configs().pico8 = {
+  install_info = {
+    url = "https://github.com/paradoxskin/tree-sitter-pico8.git",
+    files = { "src/parser.c" },
+  },
+  filetype = "pico8"
+}
+
+-- Define the log file path
+local log_file = vim.fn.expand("~/.config/nvim-advent/nvim_log.txt")
+
+-- Function to log messages
+local function log_message(message)
+  local log_msg = string.format("[%s] %s\n", os.date("%Y-%m-%d %H:%M:%S"), message)
+  local f = io.open(log_file, "a")
+  if f then
+    f:write(log_msg)
+    f:close()
+  else
+    print("Failed to open log file: " .. log_file)
+  end
+end
+
+-- Export the log function to be used globally
+_G.log_message = log_message
+[2024-12-29 00:24:21] stdin : print("advent of neovim")
+
+require("config.lazy")
+require("config.options")
+require("config.remaps")
+require("config.autocommands")
+
+require("nvim-treesitter.parsers").get_parser_configs().pico8 = {
+  install_info = {
+    url = "https://github.com/paradoxskin/tree-sitter-pico8.git",
+    files = { "src/parser.c" },
+  },
+  filetype = "pico8"
+}
+
+-- Define the log file path
+local log_file = vim.fn.expand("~/.config/nvim-advent/nvim_log.txt")
+
+-- Function to log messages
+local function log_message(message)
+  local log_msg = string.format("[%s] %s\n", os.date("%Y-%m-%d %H:%M:%S"), message)
+  local f = io.open(log_file, "a")
+  if f then
+    f:write(log_msg)
+    f:close()
+  else
+    print("Failed to open log file: " .. log_file)
+  end
+end
+
+-- Export the log function to be used globally
+_G.log_message = log_message
+[2024-12-29 00:34:19] multipath : init.lua
+[2024-12-29 00:38:35] multipath : init.lua
+[2024-12-29 00:40:06] multipath : init.lua
+[2024-12-29 00:49:11] Fuck: init.lua
+[2024-12-29 00:50:03] Fuck: init.lua
+[2024-12-29 00:51:33] Fuck: ./init.lua
+[2024-12-29 00:52:02] Fuck: ./init.lua
+[2024-12-29 00:53:05] Fuck: ./init.lua
+[2024-12-29 00:53:14] multipath : init.lua
+[2024-12-29 00:54:07] Fuck: init.lua
